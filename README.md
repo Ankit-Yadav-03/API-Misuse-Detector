@@ -62,12 +62,3 @@ It provides **signals and evidence** — humans make the judgment.
 | IP Evidence       | Context to support security investigation    |
 
 
-## Running an Audit
-
-1. Prepare a JSON file containing API usage events  
-   (see `examples/sample_audit_input.json` for the required format).
-
-2. Run the offline audit:
-```bash
-python scripts/run_audit.py
-```
