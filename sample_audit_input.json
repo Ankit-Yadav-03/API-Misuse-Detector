@@ -1,0 +1,93 @@
+[
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:05:00Z",
+    "method": "GET",
+    "path": "/v1/users",
+    "source_ip": "203.0.113.1",
+    "status_code": 200
+  },
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:06:00Z",
+    "method": "GET",
+    "path": "/v1/users",
+    "source_ip": "203.0.113.1",
+    "status_code": 200
+  },
+
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:10:00Z",
+    "method": "POST",
+    "path": "/v1/orders",
+    "source_ip": "198.51.100.7",
+    "status_code": 200
+  },
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:10:01Z",
+    "method": "POST",
+    "path": "/v1/orders",
+    "source_ip": "198.51.100.7",
+    "status_code": 200
+  },
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:10:02Z",
+    "method": "POST",
+    "path": "/v1/orders",
+    "source_ip": "192.0.2.42",
+    "status_code": 200
+  },
+
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:15:00Z",
+    "method": "GET",
+    "path": "/v1/admin",
+    "source_ip": "192.0.2.42",
+    "status_code": 401
+  },
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:15:05Z",
+    "method": "GET",
+    "path": "/v1/admin",
+    "source_ip": "192.0.2.42",
+    "status_code": 403
+  },
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:15:10Z",
+    "method": "GET",
+    "path": "/v1/admin",
+    "source_ip": "198.51.100.7",
+    "status_code": 401
+  },
+
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:20:00Z",
+    "method": "GET",
+    "path": "/v1/billing",
+    "source_ip": "203.0.113.1",
+    "status_code": 200
+  },
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:20:05Z",
+    "method": "GET",
+    "path": "/v1/internal/config",
+    "source_ip": "203.0.113.1",
+    "status_code": 200
+  },
+  {
+    "api_key_id": "key_12345678",
+    "timestamp": "2025-01-15T09:20:10Z",
+    "method": "GET",
+    "path": "/v1/metrics",
+    "source_ip": "198.51.100.7",
+    "status_code": 200
+  }
+]

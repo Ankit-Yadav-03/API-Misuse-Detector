@@ -1,0 +1,74 @@
+{
+  "audit_id": "6d9be64baade4baba0a25e9314ce6003",
+  "generated_at": "2025-12-30T13:09:05.467284Z",
+  "window_start": "2025-01-15T09:15:10Z",
+  "window_end": "2025-01-15T09:20:10Z",
+  "total_events": 11,
+  "total_findings": 2,
+  "severity_counts": {
+    "INFO": 0,
+    "LOW": 0,
+    "MEDIUM": 2,
+    "HIGH": 0,
+    "CRITICAL": 0
+  },
+  "findings": [
+    {
+      "finding": {
+        "detector": "rate_anomaly",
+        "api_key_id": "key_12345678",
+        "finding_type": "rate_anomaly",
+        "window_start": "2025-01-15T09:15:10Z",
+        "window_end": "2025-01-15T09:20:10Z",
+        "summary": "Request volume 3 exceeded threshold 3 in audit window",
+        "evidence": {
+          "event_count": 3,
+          "threshold": 3,
+          "window_start": "2025-01-15T09:15:10+00:00",
+          "window_end": "2025-01-15T09:20:10+00:00",
+          "ip_metadata": {
+            "distinct_ip_count": 2,
+            "source_ips": [
+              "198.51.100.7",
+              "203.0.113.1"
+            ]
+          }
+        },
+        "detected_at": "2025-12-30T13:09:05.467237Z"
+      },
+      "severity": "MEDIUM",
+      "score": 50
+    },
+    {
+      "finding": {
+        "detector": "endpoint_anomaly",
+        "api_key_id": "key_12345678",
+        "finding_type": "endpoint_anomaly",
+        "window_start": "2025-01-15T09:15:10Z",
+        "window_end": "2025-01-15T09:20:10Z",
+        "summary": "Distinct endpoint count 3 exceeded threshold 2 in audit window",
+        "evidence": {
+          "distinct_endpoint_count": 3,
+          "distinct_endpoints": [
+            "/v1/internal/config",
+            "/v1/admin",
+            "/v1/billing"
+          ],
+          "threshold": 2,
+          "window_start": "2025-01-15T09:15:10+00:00",
+          "window_end": "2025-01-15T09:20:10+00:00",
+          "ip_metadata": {
+            "distinct_ip_count": 2,
+            "source_ips": [
+              "198.51.100.7",
+              "203.0.113.1"
+            ]
+          }
+        },
+        "detected_at": "2025-12-30T13:09:05.467253Z"
+      },
+      "severity": "MEDIUM",
+      "score": 60
+    }
+  ]
+}
